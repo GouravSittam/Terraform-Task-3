@@ -42,7 +42,7 @@ const services = [
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
     task: "Create a custom VPC with 1 public subnet and Internet Gateway",
-    screenshot: null,
+    screenshot: "/images/Amazon VPC.jpg",
   },
   {
     name: "AWS Lambda",
