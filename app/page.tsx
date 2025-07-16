@@ -1,7 +1,13 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 import {
   Github,
   ExternalLink,
@@ -15,7 +21,7 @@ import {
   Network,
   Eye,
   Settings,
-} from "lucide-react"
+} from "lucide-react";
 
 const services = [
   {
@@ -26,7 +32,7 @@ const services = [
     bgColor: "bg-orange-50",
     borderColor: "border-orange-200",
     task: "Launch a t2.micro instance with Amazon Linux 2",
-    screenshot: "ec2_instance.png",
+    screenshot: "/images/aws-instance-details.png",
   },
   {
     name: "Amazon VPC",
@@ -36,7 +42,7 @@ const services = [
     bgColor: "bg-blue-50",
     borderColor: "border-blue-200",
     task: "Create a custom VPC with 1 public subnet and Internet Gateway",
-    screenshot: "vpc_setup.png",
+    screenshot: null,
   },
   {
     name: "AWS Lambda",
@@ -46,7 +52,7 @@ const services = [
     bgColor: "bg-yellow-50",
     borderColor: "border-yellow-200",
     task: "Create a simple Lambda function (Hello World in Python)",
-    screenshot: "lambda_function.png",
+    screenshot: "/images/AWS Lambda.jpg",
   },
   {
     name: "Amazon S3",
@@ -56,7 +62,7 @@ const services = [
     bgColor: "bg-green-50",
     borderColor: "border-green-200",
     task: "Create a private bucket with versioning enabled",
-    screenshot: "s3_bucket.png",
+    screenshot: "/images/aws-console.png",
   },
   {
     name: "Amazon EBS",
@@ -66,7 +72,7 @@ const services = [
     bgColor: "bg-purple-50",
     borderColor: "border-purple-200",
     task: "Attach a 10GB EBS volume to your EC2 instance",
-    screenshot: "ebs_volume.png",
+    screenshot: "/images/Amazon EBS.jpg",
   },
   {
     name: "Amazon RDS",
@@ -76,7 +82,7 @@ const services = [
     bgColor: "bg-indigo-50",
     borderColor: "border-indigo-200",
     task: "Launch a db.t2.micro RDS instance (MySQL)",
-    screenshot: "rds_instance.png",
+    screenshot: null,
   },
   {
     name: "Amazon Athena",
@@ -86,7 +92,7 @@ const services = [
     bgColor: "bg-teal-50",
     borderColor: "border-teal-200",
     task: "Create a database and table from sample S3 data",
-    screenshot: "athena_setup.png",
+    screenshot: null,
   },
   {
     name: "Amazon CloudWatch",
@@ -96,7 +102,7 @@ const services = [
     bgColor: "bg-red-50",
     borderColor: "border-red-200",
     task: "Create an alarm for EC2 CPU utilization > 70%",
-    screenshot: "cloudwatch_alarm.png",
+    screenshot: null,
   },
   {
     name: "AWS CloudTrail",
@@ -106,7 +112,7 @@ const services = [
     bgColor: "bg-gray-50",
     borderColor: "border-gray-200",
     task: "Enable CloudTrail to monitor API activity",
-    screenshot: "cloudtrail_setup.png",
+    screenshot: null,
   },
   {
     name: "AWS CloudFormation",
@@ -116,7 +122,7 @@ const services = [
     bgColor: "bg-pink-50",
     borderColor: "border-pink-200",
     task: "Deploy a basic template to create an EC2 instance",
-    screenshot: "cloudformation_stack.png",
+    screenshot: null,
   },
   {
     name: "AWS CDK",
@@ -126,9 +132,9 @@ const services = [
     bgColor: "bg-cyan-50",
     borderColor: "border-cyan-200",
     task: "Use CDK to provision an S3 bucket (TypeScript)",
-    screenshot: "cdk_deployment.png",
+    screenshot: null,
   },
-]
+];
 
 export default function AWSMultiServiceShowcase() {
   return (
@@ -138,12 +144,18 @@ export default function AWSMultiServiceShowcase() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900">AWS Multi-Service Infrastructure</h1>
-              <p className="text-gray-600 mt-1">Comprehensive Cloud Infrastructure Deployment</p>
+              <h1 className="text-3xl font-bold text-gray-900">
+                AWS Multi-Service Infrastructure
+              </h1>
+              <p className="text-gray-600 mt-1">
+                Comprehensive Cloud Infrastructure Deployment
+              </p>
               <div className="flex items-center gap-4 mt-2">
                 <p className="text-lg font-semibold text-blue-600">Gourav</p>
                 <span className="text-gray-400">|</span>
-                <p className="text-sm text-gray-500">Registration No: 12203224</p>
+                <p className="text-sm text-gray-500">
+                  Registration No: 12203224
+                </p>
               </div>
             </div>
             <div className="flex gap-3">
@@ -170,7 +182,8 @@ export default function AWSMultiServiceShowcase() {
                 Project Overview
               </CardTitle>
               <CardDescription>
-                Comprehensive AWS infrastructure deployment covering 11 different services using Terraform and AWS CDK
+                Comprehensive AWS infrastructure deployment covering 11
+                different services using Terraform and AWS CDK
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -185,10 +198,14 @@ export default function AWSMultiServiceShowcase() {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">IaC</div>
-                  <p className="text-sm text-gray-600">Infrastructure as Code</p>
+                  <p className="text-sm text-gray-600">
+                    Infrastructure as Code
+                  </p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-600">Secure</div>
+                  <div className="text-3xl font-bold text-orange-600">
+                    Secure
+                  </div>
                   <p className="text-sm text-gray-600">Best Practices</p>
                 </div>
               </div>
@@ -214,7 +231,9 @@ export default function AWSMultiServiceShowcase() {
                   <p className="text-lg text-blue-600 font-medium">Gourav</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">Registration Number</h3>
+                  <h3 className="font-semibold text-gray-900 mb-2">
+                    Registration Number
+                  </h3>
                   <p className="text-lg text-blue-600 font-medium">12203224</p>
                 </div>
               </div>
@@ -224,39 +243,63 @@ export default function AWSMultiServiceShowcase() {
 
         {/* Services Grid */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">AWS Services Implemented</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            AWS Services Implemented
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => {
-              const IconComponent = service.icon
+              const IconComponent = service.icon;
               return (
-                <Card key={index} className={`${service.bgColor} ${service.borderColor} border-2`}>
+                <Card
+                  key={index}
+                  className={`${service.bgColor} ${service.borderColor} border-2`}
+                >
                   <CardHeader>
-                    <CardTitle className={`flex items-center gap-2 ${service.color}`}>
+                    <CardTitle
+                      className={`flex items-center gap-2 ${service.color}`}
+                    >
                       <IconComponent className="w-6 h-6" />
                       {service.name}
                     </CardTitle>
-                    <CardDescription className="text-gray-700">{service.description}</CardDescription>
+                    <CardDescription className="text-gray-700">
+                      {service.description}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <p className="text-sm text-gray-600 mb-3">{service.task}</p>
-                    <div className="bg-white rounded-lg p-4 border border-gray-200">
-                      <div className="flex items-center justify-center h-32 bg-gray-50 rounded border-2 border-dashed border-gray-300">
-                        <div className="text-center">
-                          <div className="text-gray-400 mb-2">📸</div>
-                          <p className="text-sm text-gray-500">Screenshot: {service.screenshot}</p>
+                    {service.screenshot ? (
+                      <div className="bg-white rounded-lg p-4 border border-gray-200 flex flex-col items-center">
+                        <img
+                          src={service.screenshot}
+                          alt={service.name + " Screenshot"}
+                          className="rounded mb-2 border border-gray-200 max-h-48 object-contain"
+                        />
+                        <p className="text-xs text-gray-500">Screenshot</p>
+                      </div>
+                    ) : (
+                      <div className="bg-white rounded-lg p-4 border border-gray-200">
+                        <div className="flex items-center justify-center h-32 bg-gray-50 rounded border-2 border-dashed border-gray-300">
+                          <div className="text-center">
+                            <div className="text-gray-400 mb-2">📸</div>
+                            <p className="text-sm text-gray-500">
+                              No screenshot available
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                   </CardContent>
                 </Card>
-              )
+              );
             })}
           </div>
         </section>
 
         {/* Terraform Code Tabs */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Infrastructure Code</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Infrastructure Code
+          </h2>
           <Tabs defaultValue="main" className="space-y-6">
             <TabsList className="grid w-full grid-cols-5">
               <TabsTrigger value="main">Main Config</TabsTrigger>
@@ -270,7 +313,9 @@ export default function AWSMultiServiceShowcase() {
               <Card>
                 <CardHeader>
                   <CardTitle>Main Terraform Configuration</CardTitle>
-                  <CardDescription>Provider configuration and main resource definitions</CardDescription>
+                  <CardDescription>
+                    Provider configuration and main resource definitions
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -352,7 +397,9 @@ locals {
               <Card>
                 <CardHeader>
                   <CardTitle>Compute Resources (EC2, Lambda)</CardTitle>
-                  <CardDescription>EC2 instances and Lambda functions</CardDescription>
+                  <CardDescription>
+                    EC2 instances and Lambda functions
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -461,7 +508,9 @@ resource "aws_iam_role_policy_attachment" "lambda_basic" {
               <Card>
                 <CardHeader>
                   <CardTitle>Storage Resources (S3, RDS)</CardTitle>
-                  <CardDescription>S3 buckets and RDS database instances</CardDescription>
+                  <CardDescription>
+                    S3 buckets and RDS database instances
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -562,8 +611,12 @@ EOF
             <TabsContent value="network" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Network Resources (VPC, Subnets, Security Groups)</CardTitle>
-                  <CardDescription>VPC configuration and network security</CardDescription>
+                  <CardTitle>
+                    Network Resources (VPC, Subnets, Security Groups)
+                  </CardTitle>
+                  <CardDescription>
+                    VPC configuration and network security
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -689,8 +742,12 @@ resource "aws_security_group" "rds" {
             <TabsContent value="monitoring" className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>Monitoring & Analytics (CloudWatch, Athena, CloudTrail)</CardTitle>
-                  <CardDescription>Monitoring, logging, and analytics resources</CardDescription>
+                  <CardTitle>
+                    Monitoring & Analytics (CloudWatch, Athena, CloudTrail)
+                  </CardTitle>
+                  <CardDescription>
+                    Monitoring, logging, and analytics resources
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -824,11 +881,15 @@ resource "aws_athena_workgroup" "main" {
 
         {/* CloudFormation Template */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">CloudFormation Template</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            CloudFormation Template
+          </h2>
           <Card>
             <CardHeader>
               <CardTitle>Basic EC2 CloudFormation Template</CardTitle>
-              <CardDescription>YAML template for deploying EC2 instance via CloudFormation</CardDescription>
+              <CardDescription>
+                YAML template for deploying EC2 instance via CloudFormation
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -906,11 +967,15 @@ Outputs:
 
         {/* AWS CDK Code */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">AWS CDK Implementation</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            AWS CDK Implementation
+          </h2>
           <Card>
             <CardHeader>
               <CardTitle>CDK TypeScript Code</CardTitle>
-              <CardDescription>AWS CDK code to provision S3 bucket using TypeScript</CardDescription>
+              <CardDescription>
+                AWS CDK code to provision S3 bucket using TypeScript
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -994,7 +1059,9 @@ new GouravCdkStack(app, 'GouravCdkStack', {
 
         {/* Deployment Instructions */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Deployment Instructions</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Deployment Instructions
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card>
               <CardHeader>
@@ -1006,25 +1073,33 @@ new GouravCdkStack(app, 'GouravCdkStack', {
                     <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       1
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">terraform init</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      terraform init
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       2
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">terraform plan</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      terraform plan
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       3
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">terraform apply</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      terraform apply
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       4
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">terraform destroy</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      terraform destroy
+                    </code>
                   </div>
                 </div>
               </CardContent>
@@ -1040,25 +1115,33 @@ new GouravCdkStack(app, 'GouravCdkStack', {
                     <div className="w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       1
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">npm install</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      npm install
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-purple-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       2
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">cdk bootstrap</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      cdk bootstrap
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       3
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">cdk deploy</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      cdk deploy
+                    </code>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                       4
                     </div>
-                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">cdk destroy</code>
+                    <code className="bg-gray-100 px-2 py-1 rounded text-sm">
+                      cdk destroy
+                    </code>
                   </div>
                 </div>
               </CardContent>
@@ -1068,7 +1151,9 @@ new GouravCdkStack(app, 'GouravCdkStack', {
 
         {/* Technologies Used */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Technologies & Tools Used</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Technologies & Tools Used
+          </h2>
           <div className="flex flex-wrap gap-2">
             {[
               "Terraform",
@@ -1099,11 +1184,16 @@ new GouravCdkStack(app, 'GouravCdkStack', {
       <footer className="bg-white border-t mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p className="font-semibold text-gray-800 mb-2">Gourav - Registration No: 12203224</p>
-            <p>© 2024 AWS Multi-Service Infrastructure Project. Built with Next.js and deployed on Vercel.</p>
+            <p className="font-semibold text-gray-800 mb-2">
+              Gourav - Registration No: 12203224
+            </p>
+            <p>
+              © 2024 AWS Multi-Service Infrastructure Project. Built with
+              Next.js and deployed on Vercel.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
