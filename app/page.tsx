@@ -82,7 +82,7 @@ const services = [
     bgColor: "bg-indigo-50",
     borderColor: "border-indigo-200",
     task: "Launch a db.t2.micro RDS instance (MySQL)",
-    screenshot: null,
+    screenshot: "/images/Amazon RDS.jpg",
   },
   {
     name: "Amazon Athena",
